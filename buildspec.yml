@@ -5,6 +5,8 @@ phases:
     commands:
       - echo Logging in to Amazon ECR...
       - aws ecr get-login-password --region $AWS_REGION | docker login --username AWS --password-stdin 351556823156.dkr.ecr.us-east-1.amazonaws.com
+      - printf '[{"gmail-finance-manager","imageUri":"351556823156.dkr.ecr.us-east-1.amazonaws.com/gmail-finance-manager"}]' >
+imagedefinitions.json
   build:
     commands:
       - echo Build started on `date`
