@@ -1,6 +1,6 @@
 [
   {
-    "name": "hello-world",
-    "imageUri": "ACCOUNT-ID.dkr.ecr.us-east-1.amazonaws.com/actions/image-repo"
+    "name": "databerry-app",
+    "imageUri": "351556823156.dkr.ecr.us-east-1.amazonaws.com/databerry-image-repo"
   }
 ]
